@@ -29,7 +29,7 @@ async function get_distance(points) {
 async function setUpMy_app() {
     let input1 = document.getElementById("point1");
     let input2 = document.getElementById("point2");
-    let button = document.getElementById("task3-submit");
+    let button = document.getElementById("navigator-submit");
     let resultSpan = document.querySelector("#result");
 
     button.addEventListener('click', async function() {
@@ -45,7 +45,7 @@ async function setUpMy_app() {
           };
           let result = await get_distance(points);
 
-        resultSpan.innerHTML = "Результат: " + result;
+        resultSpan.textContent = `Distance between ${points.start} and ${points.end} : ${result} km`;
        }
     })
 }
