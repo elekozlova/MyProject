@@ -1,0 +1,9 @@
+asyncpg
+fastapi
+uvicorn
+httpie
+httpx
+geopy
+
+
+
