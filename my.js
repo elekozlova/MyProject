@@ -35,7 +35,6 @@ async function setUpMy_app() {
     button.addEventListener('click', async function() {
         let value1 = input1.value;
         let value2 = input2.value;
-
         if (value1 === '' || value2 === '') {
             alert('Не хватает данных!');
         } else {
