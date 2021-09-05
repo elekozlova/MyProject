@@ -24,7 +24,14 @@ async def _(response: Response):
 async def _(response: Response):
     apply_cache_headers(response)
 
-    return static_response("my_image.jpg")
+    return static_response("image.jpg")
+
+
+@app.get("/style")
+async def _(response: Response):
+    apply_cache_headers(response)
+
+    return static_response("style.css")
 
 
 @app.get("/js")
