@@ -4,6 +4,7 @@ uvicorn
 httpie
 httpx
 geopy
+folium
 
 
 
